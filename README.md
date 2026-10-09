@@ -39,7 +39,25 @@ Copy `.env.example` to `.env.local` and adjust as needed.
 `src/config/site.ts`). This stops the site from going live without a legally required
 Impressum/Datenschutz. See `docs/publication-checklist.md` for the full list of missing inputs.
 
-## Netlify review deployment
+## Vercel review deployment
+
+`vercel.json` pins the Next.js preset, `pnpm install` / `pnpm build`, and sends
+`X-Robots-Tag: noindex, nofollow` on every response. Deploy **previews only**
+(Vercel project `tunes-alltagshilfe`, team `aminejameli-projects`). Leave
+`NEXT_PUBLIC_SITE_ENV` and `NEXT_PUBLIC_SITE_URL` unset: the site then runs in preview mode,
+with the noindex meta tag, `Disallow: /`, the preview banner and the legal placeholders.
+
+```bash
+alias vercel="pnpm --package=vercel dlx vercel"
+vercel login                           # once, or pass --token "$VERCEL_TOKEN"
+vercel link --project tunes-alltagshilfe --scope aminejameli-projects   # once
+vercel deploy                          # preview deployment (never add --prod)
+```
+
+If the project is linked to the Git repository, every push to a non-production branch also
+creates a preview deployment automatically.
+
+## Netlify review deployment (alternative)
 
 `netlify.toml` configures a **review/preview** site only: it builds with `pnpm build`, uses the
 Next.js runtime (`@netlify/plugin-nextjs`), forces `NEXT_PUBLIC_SITE_ENV=preview` and sends
