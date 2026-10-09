@@ -1,0 +1,19 @@
+# Review/preview deployment only. Production needs NEXT_PUBLIC_SITE_ENV=production,
+# NEXT_PUBLIC_SITE_URL and approved legal pages (see README → Publication guard).
+[build]
+  command = "pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  PNPM_VERSION = "10.33.4"
+  NEXT_PUBLIC_SITE_ENV = "preview"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
