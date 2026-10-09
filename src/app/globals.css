@@ -1,0 +1,221 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * TUNES design tokens.
+ * Brand: deep blue #174B70, green accent #79A85A, warm white #F7F8F4,
+ * body text #263E48, secondary text #52636B. Green is an accent only — never body text.
+ */
+:root {
+  --brand-blue: #174b70;
+  --brand-green: #79a85a;
+  --brand-warm-white: #f7f8f4;
+
+  --background: #f7f8f4;
+  --foreground: #263e48;
+  --heading: #174b70;
+  --muted-foreground: #52636b;
+
+  --surface: #ffffff;
+  --surface-tint: #e8f0e1;
+  --surface-tint-foreground: #263e48;
+
+  --primary: #174b70;
+  --primary-hover: #113a57;
+  --primary-foreground: #ffffff;
+
+  --accent-green: #79a85a;
+  /* Darker green for icons and small marks on light surfaces (≥ 3:1 non-text contrast). */
+  --accent-green-strong: #4f7d36;
+
+  --band: #174b70;
+  --band-foreground: #ffffff;
+  --band-muted: #d6e4ee;
+  --band-ring: #ffffff;
+
+  --logo-ink: #174b70;
+  --logo-heart: #79a85a;
+
+  --border: #d9e0d5;
+  --border-strong: #b9c5bd;
+  --ring: #174b70;
+
+  /* shadcn/ui aliases */
+  --card: var(--surface);
+  --card-foreground: var(--foreground);
+  --popover: var(--surface);
+  --popover-foreground: var(--foreground);
+  --secondary: var(--surface-tint);
+  --secondary-foreground: var(--heading);
+  --muted: var(--surface-tint);
+  --accent: var(--surface-tint);
+  --accent-foreground: var(--heading);
+  --destructive: #b42318;
+  --input: var(--border-strong);
+
+  --radius: 0.75rem;
+  --header-height: 4.5rem;
+}
+
+.dark {
+  --background: #0e1b24;
+  --foreground: #dbe4e8;
+  --heading: #f1f4ee;
+  --muted-foreground: #a9b8bf;
+
+  --surface: #15262f;
+  --surface-tint: #1a2f2b;
+  --surface-tint-foreground: #dbe4e8;
+
+  --primary: #a9cdea;
+  --primary-hover: #c4ddf1;
+  --primary-foreground: #0e1b24;
+
+  --accent-green: #79a85a;
+  --accent-green-strong: #9cc67f;
+
+  --band: #174b70;
+  --band-foreground: #ffffff;
+  --band-muted: #d6e4ee;
+  --band-ring: #ffffff;
+
+  --logo-ink: #eef3f6;
+  --logo-heart: #79a85a;
+
+  --border: #263c48;
+  --border-strong: #3a5563;
+  --ring: #a9cdea;
+
+  --destructive: #f97066;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-heading: var(--heading);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-surface: var(--surface);
+  --color-surface-tint: var(--surface-tint);
+  --color-surface-tint-foreground: var(--surface-tint-foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent-green: var(--accent-green);
+  --color-accent-green-strong: var(--accent-green-strong);
+  --color-band: var(--band);
+  --color-band-foreground: var(--band-foreground);
+  --color-band-muted: var(--band-muted);
+  --color-band-ring: var(--band-ring);
+  --color-logo-ink: var(--logo-ink);
+  --color-logo-heart: var(--logo-heart);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-input: var(--input);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.4);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply font-sans;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-padding-top: calc(var(--header-height) + 1rem);
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss03";
+    overflow-wrap: break-word;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-heading;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--ring);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  /* Suppress transitions while the theme class flips to avoid a colour sweep. */
+  .theme-switching *,
+  .theme-switching *::before,
+  .theme-switching *::after {
+    transition: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    translate: 0 1.5rem;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
