@@ -1,0 +1,187 @@
+{
+  "Metadata": {
+    "title": "TUNES | Everyday Assistance & Companionship",
+    "description": "TUNES Alltagshilfe & Betreuung: household help, shopping and errands, accompaniment to appointments and personal companionship in everyday life. We speak German, Arabic, French and English.",
+    "ogImageAlt": "TUNES logo – a house with a heart – and the motto “Making everyday life easier, together.”",
+    "siteName": "TUNES Alltagshilfe & Betreuung"
+  },
+  "Common": {
+    "skipToContent": "Skip to content",
+    "homeLink": "TUNES Alltagshilfe & Betreuung – go to homepage",
+    "emailCta": "Send an email",
+    "emailSubject": "Enquiry via the website",
+    "emailOpensHint": "opens your email app",
+    "copyEmail": "Copy email address",
+    "copied": "Copied",
+    "copiedAnnouncement": "Email address copied to the clipboard.",
+    "copyFailed": "Copying isn't available. Please select the address manually.",
+    "illustrativeImage": "Illustrative image",
+    "previewBanner": "Preview version: the legal notice, privacy policy and some company details are still missing. This site is not indexed by search engines.",
+    "slogan": "Making everyday life easier, together.",
+    "serviceLanguages": "We speak German, Arabic, French and English."
+  },
+  "Nav": {
+    "label": "Main navigation",
+    "services": "Services",
+    "about": "About us",
+    "process": "How it works",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "menuTitle": "Menu",
+    "menuDescription": "Navigation, language and colour scheme"
+  },
+  "Preferences": {
+    "language": "Language",
+    "theme": "Colour scheme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System"
+  },
+  "Hero": {
+    "eyebrow": "Everyday assistance & companionship",
+    "titleLine1": "An easier everyday life.",
+    "titleLine2": "More time for living.",
+    "body": "Whether it's housework, shopping or accompaniment to appointments: TUNES supports you personally and reliably – in a way that fits your daily life.",
+    "secondaryCta": "Explore our services"
+  },
+  "Services": {
+    "title": "How can we support you?",
+    "intro": "Practical help and personal companionship for your everyday life.",
+    "cta": "Request support",
+    "items": {
+      "household": {
+        "title": "Household help",
+        "body": "We help with cleaning, tidying, laundry and keeping things in order.",
+        "imageAlt": "Two people on a sofa with a teapot and a basket of folded towels in a bright living room."
+      },
+      "errands": {
+        "title": "Shopping & errands",
+        "body": "Support with grocery shopping, pharmacy errands and trips to the post office.",
+        "imageAlt": "An older woman and a helper unpacking a shopping bag with bread, apples and vegetables together in a kitchen."
+      },
+      "accompaniment": {
+        "title": "Accompaniment",
+        "body": "We accompany you to medical and other appointments and support you along the way.",
+        "imageAlt": "An older woman walking arm in arm with a companion along the pavement of a quiet residential street."
+      },
+      "companionship": {
+        "title": "Everyday assistance & companionship",
+        "body": "Conversations, walks and support in everyday life – for families, children and young people too.",
+        "imageAlt": "Two older men taking a walk together along an autumn path, one using a walking stick."
+      }
+    }
+  },
+  "About": {
+    "eyebrow": "About us",
+    "title": "Personal support. Caring and close by.",
+    "body": "You and your everyday life are at the centre of what we do. Together, we talk about the support you need and what matters most to you.",
+    "valuesLabel": "Our values",
+    "values": {
+      "reliable": "Reliable",
+      "discreet": "Discreet",
+      "humane": "Compassionate",
+      "individual": "Tailored to you"
+    }
+  },
+  "Process": {
+    "eyebrow": "How it works",
+    "title": "Three steps to more relief in your day",
+    "stepLabel": "Step {number}",
+    "steps": {
+      "contact": {
+        "title": "Get in touch",
+        "body": "Send us an email describing what you need."
+      },
+      "discuss": {
+        "title": "Discuss your needs",
+        "body": "Together, we clarify your wishes and the right kind of support."
+      },
+      "plan": {
+        "title": "Plan your support",
+        "body": "We agree on the next steps and appointments with you."
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "intro": "Answers to what you may want to know before getting in touch. Can't find your question? Feel free to write to us.",
+    "items": {
+      "services": {
+        "question": "What services does TUNES offer?",
+        "answer": "We help with housework, shopping and errands, accompany you to medical and other appointments, and offer everyday assistance and companionship – with conversations, walks and support in daily life, including for families, children and young people."
+      },
+      "enquire": {
+        "question": "How can I request support?",
+        "answer": "Send us an email at <email>betreuung@tunesalltagshilfe.de</email>. Briefly describe what you would like help with, and we will then discuss your needs together."
+      },
+      "relatives": {
+        "question": "Can I request support for a relative?",
+        "answer": "Yes. You can contact us for yourself or on behalf of a relative. We will discuss the support needed together with you."
+      },
+      "languages": {
+        "question": "Which languages do you speak?",
+        "answer": "We speak German, Arabic, French and English. This website is available in German and English."
+      },
+      "costs": {
+        "question": "How much does the support cost?",
+        "answer": "Please get in touch so that we can discuss your needs and the costs involved with you personally."
+      },
+      "funding": {
+        "question": "Questions about cost coverage?",
+        "answer": "Talk to us about your situation and the support that may be available."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let us make your everyday life easier.",
+    "body": "Would you like support for yourself or a relative? We look forward to hearing from you.",
+    "emailLabel": "Email"
+  },
+  "Footer": {
+    "navLabel": "Footer navigation",
+    "legalLabel": "Legal",
+    "contactHeading": "Contact",
+    "navHeading": "Pages",
+    "impressum": "Legal notice",
+    "privacy": "Privacy policy"
+  },
+  "Legal": {
+    "pendingBadge": "Content pending",
+    "pendingIntro": "This content will be published once verified company details are available. Until then, this page is only visible in the preview.",
+    "requiredHeading": "Information required",
+    "backHome": "Back to homepage",
+    "impressum": {
+      "title": "Legal notice",
+      "description": "Legal notice (Impressum) of TUNES Alltagshilfe & Betreuung.",
+      "required": [
+        "Full legal company name and legal form",
+        "Authorised representative or responsible person",
+        "Registered business address",
+        "Contact details (email and, if applicable, phone)",
+        "Register and tax details, where applicable",
+        "Reviewed and approved legal notice text"
+      ]
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "Privacy information of TUNES Alltagshilfe & Betreuung.",
+      "required": [
+        "Data controller with address",
+        "Description of actual data processing (hosting, server logs, email contact)",
+        "Details of the final website's hosting provider",
+        "Rights of data subjects",
+        "Reviewed and approved privacy policy text"
+      ]
+    }
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "body": "Sorry, the page you were looking for doesn't exist. One of these links may help.",
+    "home": "Go to homepage",
+    "services": "Our services"
+  }
+}

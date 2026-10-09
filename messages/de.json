@@ -1,0 +1,187 @@
+{
+  "Metadata": {
+    "title": "TUNES | Alltagshilfe & Betreuung",
+    "description": "TUNES Alltagshilfe & Betreuung: Haushaltshilfe, Einkaufen und Erledigungen, Begleitung zu Terminen sowie persönliche Betreuung im Alltag. Wir sprechen Deutsch, Arabisch, Französisch und Englisch.",
+    "ogImageAlt": "TUNES Logo – Haus mit Herz – und der Leitsatz „Gemeinsam den Alltag leichter machen.“",
+    "siteName": "TUNES Alltagshilfe & Betreuung"
+  },
+  "Common": {
+    "skipToContent": "Zum Inhalt springen",
+    "homeLink": "TUNES Alltagshilfe & Betreuung – zur Startseite",
+    "emailCta": "E-Mail schreiben",
+    "emailSubject": "Anfrage über die Website",
+    "emailOpensHint": "öffnet Ihr E-Mail-Programm",
+    "copyEmail": "E-Mail-Adresse kopieren",
+    "copied": "Kopiert",
+    "copiedAnnouncement": "E-Mail-Adresse in die Zwischenablage kopiert.",
+    "copyFailed": "Kopieren nicht möglich. Bitte markieren Sie die Adresse manuell.",
+    "illustrativeImage": "Symbolbild",
+    "previewBanner": "Vorschauversion: Impressum, Datenschutz und einige Unternehmensangaben fehlen noch. Diese Seite wird nicht von Suchmaschinen indexiert.",
+    "slogan": "Gemeinsam den Alltag leichter machen.",
+    "serviceLanguages": "Wir sprechen Deutsch, Arabisch, Französisch und Englisch."
+  },
+  "Nav": {
+    "label": "Hauptnavigation",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "process": "Ablauf",
+    "faq": "Fragen",
+    "contact": "Kontakt",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen",
+    "menuTitle": "Menü",
+    "menuDescription": "Navigation, Sprache und Farbschema"
+  },
+  "Preferences": {
+    "language": "Sprache",
+    "theme": "Farbschema",
+    "themeLight": "Hell",
+    "themeDark": "Dunkel",
+    "themeSystem": "System"
+  },
+  "Hero": {
+    "eyebrow": "Alltagshilfe & Betreuung",
+    "titleLine1": "Ein leichterer Alltag.",
+    "titleLine2": "Mehr Zeit fürs Leben.",
+    "body": "Ob Haushalt, Einkäufe oder Begleitung zu Terminen: TUNES unterstützt Sie persönlich und zuverlässig – passend zu Ihrem Alltag.",
+    "secondaryCta": "Unsere Leistungen entdecken"
+  },
+  "Services": {
+    "title": "Wie können wir Sie unterstützen?",
+    "intro": "Praktische Unterstützung und persönliche Begleitung für Ihren Alltag.",
+    "cta": "Unterstützung anfragen",
+    "items": {
+      "household": {
+        "title": "Haushaltshilfe",
+        "body": "Wir helfen beim Putzen, Aufräumen, bei der Wäsche und dabei, Ordnung zu halten.",
+        "imageAlt": "Zwei Personen auf einem Sofa mit Teekanne und einem Korb gefalteter Handtücher in einem hellen Wohnzimmer."
+      },
+      "errands": {
+        "title": "Einkaufen & Erledigungen",
+        "body": "Unterstützung beim Lebensmitteleinkauf, bei Besorgungen in der Apotheke und bei Postwegen.",
+        "imageAlt": "Eine ältere Frau und eine Helferin packen in einer Küche gemeinsam eine Einkaufstüte mit Brot, Äpfeln und Gemüse aus."
+      },
+      "accompaniment": {
+        "title": "Begleitung",
+        "body": "Wir begleiten Sie zu Arztterminen und anderen Terminen und unterstützen Sie unterwegs.",
+        "imageAlt": "Eine ältere Frau geht untergehakt mit einer Begleiterin einen Gehweg in einer ruhigen Wohnstraße entlang."
+      },
+      "companionship": {
+        "title": "Alltagshilfe & Betreuung",
+        "body": "Gespräche, Spaziergänge und Unterstützung im Alltag – auch für Familien, Kinder und Jugendliche.",
+        "imageAlt": "Zwei ältere Männer gehen gemeinsam auf einem herbstlichen Weg spazieren, einer mit Gehstock."
+      }
+    }
+  },
+  "About": {
+    "eyebrow": "Über uns",
+    "title": "Persönliche Hilfe. Menschlich und nah.",
+    "body": "Im Mittelpunkt stehen Sie und Ihr Alltag. Wir besprechen gemeinsam, welche Unterstützung Sie brauchen und was Ihnen dabei wichtig ist.",
+    "valuesLabel": "Unsere Werte",
+    "values": {
+      "reliable": "Verlässlich",
+      "discreet": "Diskret",
+      "humane": "Menschlich",
+      "individual": "Individuell"
+    }
+  },
+  "Process": {
+    "eyebrow": "Ablauf",
+    "title": "In drei Schritten zu mehr Entlastung",
+    "stepLabel": "Schritt {number}",
+    "steps": {
+      "contact": {
+        "title": "Kontakt aufnehmen",
+        "body": "Schreiben Sie uns eine E-Mail mit Ihrem Anliegen."
+      },
+      "discuss": {
+        "title": "Bedarf besprechen",
+        "body": "Wir klären gemeinsam Ihre Wünsche und die passende Unterstützung."
+      },
+      "plan": {
+        "title": "Unterstützung planen",
+        "body": "Wir stimmen die nächsten Schritte und Termine mit Ihnen ab."
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "Fragen",
+    "title": "Häufige Fragen",
+    "intro": "Antworten auf das, was Sie vor einer Anfrage wissen möchten. Ihre Frage ist nicht dabei? Schreiben Sie uns gerne.",
+    "items": {
+      "services": {
+        "question": "Welche Leistungen bietet TUNES an?",
+        "answer": "Wir unterstützen im Haushalt, beim Einkaufen und bei Erledigungen, begleiten Sie zu Arztterminen und anderen Terminen und bieten Alltagshilfe und Betreuung – mit Gesprächen, Spaziergängen und Unterstützung im Alltag, auch für Familien, Kinder und Jugendliche."
+      },
+      "enquire": {
+        "question": "Wie kann ich Unterstützung anfragen?",
+        "answer": "Schreiben Sie uns eine E-Mail an <email>betreuung@tunesalltagshilfe.de</email>. Beschreiben Sie kurz, wobei Sie Unterstützung wünschen. Anschließend besprechen wir gemeinsam Ihren Bedarf."
+      },
+      "relatives": {
+        "question": "Kann ich Unterstützung für eine angehörige Person anfragen?",
+        "answer": "Ja. Sie können sich für sich selbst oder für eine angehörige Person an uns wenden. Wir besprechen den Bedarf gemeinsam mit Ihnen."
+      },
+      "languages": {
+        "question": "In welchen Sprachen können wir uns verständigen?",
+        "answer": "Wir sprechen Deutsch, Arabisch, Französisch und Englisch. Diese Website gibt es auf Deutsch und Englisch."
+      },
+      "costs": {
+        "question": "Was kostet die Unterstützung?",
+        "answer": "Bitte kontaktieren Sie uns, damit wir Ihren Bedarf und die anfallenden Kosten persönlich besprechen können."
+      },
+      "funding": {
+        "question": "Fragen zur Kostenübernahme?",
+        "answer": "Sprechen Sie mit uns über Ihre Situation und mögliche Unterstützung."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Kontakt",
+    "title": "Lassen Sie uns Ihren Alltag leichter machen.",
+    "body": "Sie möchten Unterstützung für sich oder eine angehörige Person? Wir freuen uns auf Ihre Nachricht.",
+    "emailLabel": "E-Mail"
+  },
+  "Footer": {
+    "navLabel": "Fußzeilennavigation",
+    "legalLabel": "Rechtliches",
+    "contactHeading": "Kontakt",
+    "navHeading": "Seiten",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "Legal": {
+    "pendingBadge": "Inhalt ausstehend",
+    "pendingIntro": "Dieser Inhalt wird veröffentlicht, sobald die geprüften Unternehmensangaben vorliegen. Bis dahin ist diese Seite nur in der Vorschau sichtbar.",
+    "requiredHeading": "Benötigte Angaben",
+    "backHome": "Zurück zur Startseite",
+    "impressum": {
+      "title": "Impressum",
+      "description": "Anbieterkennzeichnung von TUNES Alltagshilfe & Betreuung.",
+      "required": [
+        "Vollständiger rechtlicher Name des Unternehmens und Rechtsform",
+        "Vertretungsberechtigte bzw. verantwortliche Person",
+        "Ladungsfähige Geschäftsanschrift",
+        "Kontaktangaben (E-Mail und gegebenenfalls Telefon)",
+        "Register- und Steuerangaben, soweit vorhanden",
+        "Geprüfter und freigegebener Impressumstext"
+      ]
+    },
+    "privacy": {
+      "title": "Datenschutz",
+      "description": "Datenschutzhinweise von TUNES Alltagshilfe & Betreuung.",
+      "required": [
+        "Verantwortliche Stelle mit Anschrift",
+        "Beschreibung der tatsächlichen Datenverarbeitung (Hosting, Server-Logs, E-Mail-Kontakt)",
+        "Angaben zum Hosting-Anbieter der finalen Website",
+        "Rechte der betroffenen Personen",
+        "Geprüfter und freigegebener Datenschutztext"
+      ]
+    }
+  },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "body": "Die aufgerufene Seite gibt es leider nicht. Vielleicht hilft Ihnen einer dieser Wege weiter.",
+    "home": "Zur Startseite",
+    "services": "Unsere Leistungen"
+  }
+}
