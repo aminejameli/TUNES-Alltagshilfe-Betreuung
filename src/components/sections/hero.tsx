@@ -15,7 +15,7 @@ export function Hero() {
 
   return (
     <section aria-labelledby="hero-title" className="overflow-hidden">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 pt-12 pb-16 sm:px-6 sm:pt-16 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-16 lg:px-8 lg:pt-24 lg:pb-28">
+      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)] items-center gap-12 px-4 pt-12 pb-16 sm:px-6 sm:pt-16 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-16 lg:px-8 lg:pt-24 lg:pb-28">
         <div className="flex flex-col gap-6 sm:gap-8">
           <Eyebrow>{t("eyebrow")}</Eyebrow>
           <h1

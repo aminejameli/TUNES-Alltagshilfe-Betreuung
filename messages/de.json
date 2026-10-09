@@ -18,7 +18,8 @@
     "illustrativeImage": "Symbolbild",
     "previewBanner": "Vorschauversion: Impressum, Datenschutz und einige Unternehmensangaben fehlen noch. Diese Seite wird nicht von Suchmaschinen indexiert.",
     "slogan": "Gemeinsam den Alltag leichter machen.",
-    "serviceLanguages": "Wir sprechen Deutsch, Arabisch, Französisch und Englisch."
+    "serviceLanguages": "Wir sprechen Deutsch, Arabisch, Französisch und Englisch.",
+    "previewLabel": "Hinweis zur Vorschau"
   },
   "Nav": {
     "label": "Hauptnavigation",
@@ -33,6 +34,7 @@
     "menuDescription": "Navigation, Sprache und Farbschema"
   },
   "Preferences": {
+    "label": "Sprache und Farbschema",
     "language": "Sprache",
     "theme": "Farbschema",
     "themeLight": "Hell",

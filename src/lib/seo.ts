@@ -19,6 +19,16 @@ export function localizedAlternates(locale: AppLocale, href: AppPathname): Metad
   return { canonical: absoluteUrl(localizedPath(locale, href)), languages };
 }
 
+/** Base Open Graph fields; page metadata replaces the layout's object, so pages spread this in. */
+export function openGraphBase(locale: AppLocale, siteName: string): NonNullable<Metadata["openGraph"]> {
+  return {
+    type: "website",
+    siteName,
+    locale: locale === "de" ? "de_DE" : "en_GB",
+    alternateLocale: locale === "de" ? ["en_GB"] : ["de_DE"],
+  };
+}
+
 /** Serialises JSON-LD safely for inline <script> tags. */
 export function jsonLd(data: unknown) {
   return JSON.stringify(data).replace(/</g, "\\u003c");

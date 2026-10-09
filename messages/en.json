@@ -18,7 +18,8 @@
     "illustrativeImage": "Illustrative image",
     "previewBanner": "Preview version: the legal notice, privacy policy and some company details are still missing. This site is not indexed by search engines.",
     "slogan": "Making everyday life easier, together.",
-    "serviceLanguages": "We speak German, Arabic, French and English."
+    "serviceLanguages": "We speak German, Arabic, French and English.",
+    "previewLabel": "Preview notice"
   },
   "Nav": {
     "label": "Main navigation",
@@ -33,6 +34,7 @@
     "menuDescription": "Navigation, language and colour scheme"
   },
   "Preferences": {
+    "label": "Language and colour scheme",
     "language": "Language",
     "theme": "Colour scheme",
     "themeLight": "Light",

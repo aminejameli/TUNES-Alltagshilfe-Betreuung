@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 import { getSiteUrl, siteConfig } from "@/config/site";
-import { absoluteUrl, jsonLd, localizedAlternates, localizedPath } from "@/lib/seo";
+import { absoluteUrl, jsonLd, localizedAlternates, localizedPath, openGraphBase } from "@/lib/seo";
 import { About } from "@/components/sections/about";
 import { Contact } from "@/components/sections/contact";
 import { Faq, faqKeys } from "@/components/sections/faq";
@@ -16,7 +16,9 @@ export async function generateMetadata(): Promise<Metadata> {
     title: { absolute: t("title") },
     description: t("description"),
     alternates: localizedAlternates(locale, "/"),
-    openGraph: { title: t("title"), description: t("description"), url: absoluteUrl(localizedPath(locale, "/")) },
+    openGraph: {
+      ...openGraphBase(locale, t("siteName")),
+      title: t("title"), description: t("description"), url: absoluteUrl(localizedPath(locale, "/")) },
   };
 }
 

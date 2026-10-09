@@ -4,8 +4,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import { getSiteUrl, isProduction } from "@/config/site";
 import { routing } from "@/i18n/routing";
+import { openGraphBase } from "@/lib/seo";
 import { themeInitScript } from "@/components/theme/theme-store";
 import { ThemeSync } from "@/components/theme/theme-sync";
+import { InlineScript } from "@/components/theme/inline-script";
 import { PreviewBanner } from "@/components/site/preview-banner";
 import { SiteFooter } from "@/components/site/site-footer";
 import { SiteHeader } from "@/components/site/site-header";
@@ -38,12 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: { default: t("title"), template: `%s | ${t("siteName")}` },
     description: t("description"),
     applicationName: t("siteName"),
-    openGraph: {
-      type: "website",
-      siteName: t("siteName"),
-      locale: locale === "de" ? "de_DE" : "en_GB",
-      alternateLocale: locale === "de" ? ["en_GB"] : ["de_DE"],
-    },
+    openGraph: openGraphBase(locale, t("siteName")),
     twitter: { card: "summary_large_image" },
     robots: isProduction ? { index: true, follow: true } : { index: false, follow: false },
     formatDetection: { telephone: false, address: false, email: false },
@@ -55,9 +52,9 @@ export default async function LocaleLayout({ children }: LayoutProps<"/[locale]"
   const t = await getTranslations("Common");
 
   return (
-    <html lang={locale} className={inter.variable} suppressHydrationWarning>
+    <html lang={locale} className={inter.variable} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <InlineScript html={themeInitScript} />
       </head>
       <body className="flex min-h-dvh flex-col">
         <NextIntlClientProvider>

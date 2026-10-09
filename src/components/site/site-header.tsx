@@ -14,11 +14,12 @@ export function SiteHeader() {
   const locale = useLocale() as AppLocale;
   const t = useTranslations("Nav");
   const tc = useTranslations("Common");
+  const tp = useTranslations("Preferences");
   const items = navSections.map((key) => ({ label: t(key), href: sectionHref(locale, key) }));
 
   return (
     <>
-      <div className="hidden border-b border-border bg-surface lg:block">
+      <aside aria-label={tp("label")} className="hidden border-b border-border bg-surface lg:block">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-8 py-1.5">
           <p className="flex items-center gap-2 text-sm text-muted-foreground">
             <Languages aria-hidden className="size-4 text-accent-green-strong" />
@@ -29,7 +30,7 @@ export function SiteHeader() {
             <ThemeSwitcher />
           </div>
         </div>
-      </div>
+      </aside>
       <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur-md supports-[backdrop-filter]:bg-background/80">
         <div className="mx-auto flex h-(--header-height) max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
           <Link
