@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
 import { LogoMark } from "@/components/brand/logo";
 import { Button } from "@/components/ui/button";
-import { BookingCta } from "@/components/site/booking-cta";
+import { EmailCta } from "@/components/site/email-cta";
 import { sectionHref } from "@/components/site/nav-items";
 import { Eyebrow } from "./section-heading";
 
@@ -27,7 +27,7 @@ export function Hero() {
           </h1>
           <p className="max-w-xl text-lg leading-relaxed sm:text-xl">{t("body")}</p>
           <div className="flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap">
-            <BookingCta size="lg" />
+            <EmailCta size="lg" />
             <Button asChild variant="outline" size="lg">
               <Link href={sectionHref(locale, "services")}>
                 {t("secondaryCta")}
