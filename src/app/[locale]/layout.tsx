@@ -9,7 +9,6 @@ import { openGraphBase } from "@/lib/seo";
 import { themeInitScript } from "@/components/theme/theme-store";
 import { ThemeSync } from "@/components/theme/theme-sync";
 import { InlineScript } from "@/components/theme/inline-script";
-import { PreviewBanner } from "@/components/site/preview-banner";
 import { SiteFooter } from "@/components/site/site-footer";
 import { SiteHeader } from "@/components/site/site-header";
 import "../globals.css";
@@ -76,7 +75,6 @@ export default async function LocaleLayout({ children }: LayoutProps<"/[locale]"
           >
             {t("skipToContent")}
           </a>
-          {!isProduction && <PreviewBanner />}
           <SiteHeader />
           <main id="main" tabIndex={-1} className="flex-1 outline-none">
             {children}

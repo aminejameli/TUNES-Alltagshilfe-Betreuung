@@ -1,10 +1,10 @@
-import { Languages, Mail } from "lucide-react";
+import { Languages, Mail, Phone } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { siteConfig } from "@/config/site";
 import { sectionIds, type AppLocale } from "@/i18n/routing";
 import { buildMailto } from "@/lib/mailto";
+import { BookingCta } from "@/components/site/booking-cta";
 import { CopyEmailButton } from "@/components/site/copy-email-button";
-import { EmailCta } from "@/components/site/email-cta";
 import { EmailAddress } from "@/components/site/email-address";
 import { Eyebrow } from "./section-heading";
 
@@ -43,8 +43,20 @@ export function Contact() {
                   <EmailAddress email={siteConfig.email} />
                 </a>
               </div>
+              <div className="flex flex-col gap-2">
+                <p className="flex items-center gap-2 text-sm font-semibold tracking-[0.12em] text-band-muted uppercase">
+                  <Phone aria-hidden className="size-4" />
+                  {t("phoneLabel")}
+                </p>
+                <a
+                  href={`tel:${siteConfig.phone}`}
+                  className="text-xl leading-snug font-bold text-band-foreground underline decoration-white/40 underline-offset-[6px] hover:decoration-white"
+                >
+                  0155 6535 0177
+                </a>
+              </div>
               <div className="flex flex-wrap items-center gap-3">
-                <EmailCta variant="band" size="lg" />
+                <BookingCta variant="band" size="lg" />
                 <CopyEmailButton email={siteConfig.email} className="min-h-13 px-5" />
               </div>
               <p className="flex items-start gap-2.5 text-base text-band-muted">

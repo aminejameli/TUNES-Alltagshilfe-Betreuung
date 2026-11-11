@@ -11,6 +11,8 @@
     "emailCta": "Send an email",
     "emailSubject": "Enquiry via the website",
     "emailOpensHint": "opens your email app",
+    "bookingCta": "Book a consultation",
+    "bookingOpensHint": "opens the booking page",
     "copyEmail": "Copy email address",
     "copied": "Copied",
     "copiedAnnouncement": "Email address copied to the clipboard.",
@@ -141,7 +143,8 @@
     "eyebrow": "Contact",
     "title": "Let us make your everyday life easier.",
     "body": "Would you like support for yourself or a relative? We look forward to hearing from you.",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "phoneLabel": "Phone"
   },
   "Footer": {
     "navLabel": "Footer navigation",

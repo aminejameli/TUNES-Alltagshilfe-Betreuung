@@ -32,23 +32,51 @@ async function StructuredData() {
   const orgId = `${origin}#organization`;
   const pageUrl = absoluteUrl(localizedPath(locale, "/"));
 
-  // Only facts visible on the page. LocalBusiness/address data is added once verified (see siteConfig).
   const graph = [
     {
-      "@type": "Organization",
+      "@type": ["Organization", "LocalBusiness"],
       "@id": orgId,
-      name: siteConfig.name,
+      name: `${siteConfig.name} ${siteConfig.descriptor}`,
       alternateName: t("siteName"),
       url: origin,
       logo: absoluteUrl("/brand/tunes-logo.png"),
+      image: absoluteUrl("/brand/tunes-logo.png"),
       email: siteConfig.email,
+      telephone: siteConfig.phone,
       slogan: tc("slogan"),
       description: t("description"),
       knowsLanguage: [...siteConfig.serviceLanguages],
+      founder: {
+        "@type": "Person",
+        name: siteConfig.owner,
+      },
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: siteConfig.address.street,
+        addressLocality: siteConfig.address.city,
+        addressRegion: siteConfig.address.state,
+        postalCode: siteConfig.address.postalCode,
+        addressCountry: siteConfig.address.country,
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 51.5177,
+        longitude: 7.0857,
+      },
+      areaServed: {
+        "@type": "GeoCircle",
+        geoMidpoint: {
+          "@type": "GeoCoordinates",
+          latitude: 51.5177,
+          longitude: 7.0857,
+        },
+        geoRadius: `${siteConfig.serviceArea.radiusKm}000`,
+      },
       contactPoint: {
         "@type": "ContactPoint",
         contactType: "customer service",
         email: siteConfig.email,
+        telephone: siteConfig.phone,
         availableLanguage: [...siteConfig.serviceLanguages],
       },
       makesOffer: (["household", "errands", "accompaniment", "companionship"] as const).map((key) => ({
