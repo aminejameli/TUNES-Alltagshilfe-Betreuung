@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import localFont from "next/font/local";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -55,6 +56,17 @@ export default async function LocaleLayout({ children }: LayoutProps<"/[locale]"
     <html lang={locale} className={inter.variable} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
         <InlineScript html={themeInitScript} />
+        <Script
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-MM3T3RHF"
+          strategy="afterInteractive"
+        />
+        <Script id="gtm-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `}
+        </Script>
       </head>
       <body className="flex min-h-dvh flex-col">
         <NextIntlClientProvider>
