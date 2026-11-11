@@ -19,7 +19,7 @@ export const siteConfig = {
    * Cal.com booking URL. Set to the full URL once the Cal.com account is ready.
    * While `null`, the booking CTA falls back to the email CTA.
    */
-  calcomUrl: null as null | string,
+  calcomUrl: "https://cal.com/tunes-alltagshilfe/ersten-gesprach-zum-kennenlernen",
   /**
    * Set to `true` only once Impressum and Datenschutz texts have been supplied
    * and approved. Production builds fail while this is `false`.

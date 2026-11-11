@@ -2,10 +2,11 @@ import { Languages } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
+import { siteConfig } from "@/config/site";
 import { buildMailto } from "@/lib/mailto";
 import { Logo } from "@/components/brand/logo";
 import { ThemeSwitcher } from "@/components/theme/theme-switcher";
-import { EmailCta } from "./email-cta";
+import { BookingCta } from "./booking-cta";
 import { LanguageSwitcher } from "./language-switcher";
 import { MobileMenu } from "./mobile-menu";
 import { navSections, sectionHref } from "./nav-items";
@@ -57,13 +58,13 @@ export function SiteHeader() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <EmailCta className="hidden sm:inline-flex" />
-            <EmailCta className="sm:hidden" iconOnly />
+            <BookingCta className="hidden sm:inline-flex" />
+            <BookingCta className="sm:hidden" iconOnly />
             <div className="lg:hidden">
               <MobileMenu
                 items={items}
-                emailHref={buildMailto(tc("emailSubject"))}
-                emailLabel={tc("emailCta")}
+                emailHref={siteConfig.calcomUrl ?? buildMailto(tc("emailSubject"))}
+                emailLabel={siteConfig.calcomUrl ? tc("bookingCta") : tc("emailCta")}
               />
             </div>
           </div>

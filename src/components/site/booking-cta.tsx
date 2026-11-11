@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 type BookingCtaProps = Omit<React.ComponentProps<typeof Button>, "asChild" | "children"> & {
   /** Visible label override. */
   label?: string;
+  iconOnly?: boolean;
 };
 
 /**
@@ -15,7 +16,7 @@ type BookingCtaProps = Omit<React.ComponentProps<typeof Button>, "asChild" | "ch
  * When `siteConfig.calcomUrl` is set, opens the Cal.com booking page.
  * Otherwise falls back to a mailto: link.
  */
-export function BookingCta({ label, size, className, ...props }: BookingCtaProps) {
+export function BookingCta({ label, iconOnly = false, size, className, ...props }: BookingCtaProps) {
   const t = useTranslations("Common");
   const text = label ?? t("bookingCta");
   const href = siteConfig.calcomUrl ?? buildMailto(t("emailSubject"));
@@ -24,15 +25,15 @@ export function BookingCta({ label, size, className, ...props }: BookingCtaProps
   const isExternal = Boolean(siteConfig.calcomUrl);
 
   return (
-    <Button asChild size={size} className={cn(className)} {...props}>
+    <Button asChild size={iconOnly ? "icon" : size} className={cn(className)} {...props}>
       <a
         href={href}
         target={isExternal ? "_blank" : undefined}
         rel={isExternal ? "noopener noreferrer" : undefined}
         aria-label={`${text} (${hint})`}
       >
-        <CalendarCheck aria-hidden />
-        {text}
+        <CalendarCheck aria-hidden className={cn(iconOnly && "size-6")} />
+        {iconOnly ? null : text}
       </a>
     </Button>
   );
