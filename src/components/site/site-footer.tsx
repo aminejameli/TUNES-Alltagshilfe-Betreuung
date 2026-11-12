@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { isProduction, siteConfig } from "@/config/site";
 import { Link } from "@/i18n/navigation";
@@ -55,6 +56,29 @@ export function SiteFooter() {
               </span>
             </a>
           </p>
+        </div>
+
+        <div className="md:col-span-3 border-t border-border pt-8 mt-2 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+            <div className="shrink-0 bg-white px-3 py-2 rounded-lg border border-border shadow-xs">
+              <Image
+                src="/brand/mags-nrw-logo.png"
+                alt="Ministerium für Arbeit, Gesundheit und Soziales des Landes Nordrhein-Westfalen"
+                width={220}
+                height={44}
+                className="h-8 sm:h-9 w-auto object-contain"
+              />
+            </div>
+            <p className="text-xs sm:text-sm text-muted-foreground max-w-xl leading-relaxed">
+              {locale === "de"
+                ? "Anerkanntes Angebot zur Unterstützung im Alltag nach Landesrecht NRW (§ 45a SGB XI) · Abrechnung mit allen Pflegekassen möglich (Entlastungsbetrag nach § 45b SGB XI)."
+                : "Recognised provider for everyday assistance under NRW state law (Section 45a SGB XI) · Direct billing with all German long-term care insurance funds."}
+            </p>
+          </div>
+          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted-foreground">
+            <span>IK-Nr.:</span>
+            <span className="font-semibold text-heading">{siteConfig.ikNumber}</span>
+          </div>
         </div>
       </div>
 

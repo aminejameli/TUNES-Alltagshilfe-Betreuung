@@ -43,6 +43,19 @@ async function StructuredData() {
       image: absoluteUrl("/brand/tunes-logo.png"),
       email: siteConfig.email,
       telephone: siteConfig.phone,
+      taxID: siteConfig.taxNumber,
+      identifier: [
+        {
+          "@type": "PropertyValue",
+          name: "Institutionskennzeichen (IK-Nr.)",
+          value: siteConfig.ikNumber,
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Steuernummer",
+          value: siteConfig.taxNumber,
+        },
+      ],
       slogan: tc("slogan"),
       description: t("description"),
       knowsLanguage: [...siteConfig.serviceLanguages],

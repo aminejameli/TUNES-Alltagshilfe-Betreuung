@@ -1,9 +1,15 @@
 export const siteConfig = {
   name: "TUNES",
   descriptor: "Alltagshilfe & Betreuung",
+  legalName: "TUNES Alltagshilfe und Betreuung",
+  legalForm: "Einzelunternehmen",
   owner: "Naim Bouzidi",
   email: "betreuung@tunesalltagshilfe.de",
   phone: "+4915565350177",
+  phoneFormatted: "+49 155 65350177",
+  taxNumber: "319/5069/6608",
+  ikNumber: "462558393",
+  sgbOffer: "Anerkanntes Angebot zur Unterstützung im Alltag (gemäß § 45a SGB XI)",
   /** Languages spoken by the team (ISO 639-1). Not the same as website translations. */
   serviceLanguages: ["de", "ar", "fr", "en"] as const,
   address: {
