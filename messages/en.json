@@ -152,7 +152,8 @@
     "contactHeading": "Contact",
     "navHeading": "Pages",
     "impressum": "Legal notice",
-    "privacy": "Privacy policy"
+    "privacy": "Privacy policy",
+    "cookieSettings": "Cookie settings"
   },
   "Legal": {
     "pendingBadge": "Content pending",
@@ -188,5 +189,34 @@
     "body": "Sorry, the page you were looking for doesn't exist. One of these links may help.",
     "home": "Go to homepage",
     "services": "Our services"
+  },
+  "Consent": {
+    "title": "Privacy settings",
+    "body": "We use technically necessary storage so the website works. With your consent we also use Google Tag Manager/Analytics to measure reach and the Meta Pixel (Facebook/Instagram) to measure how our ads perform. You can change or withdraw your choice at any time via “Cookie settings” in the footer.",
+    "privacyLink": "Read the privacy policy",
+    "detailsLegend": "Choose categories",
+    "necessaryLabel": "Necessary",
+    "necessaryDescription": "Stores your choice and colour scheme. Always on.",
+    "analyticsLabel": "Statistics",
+    "analyticsDescription": "Google Tag Manager and Google Analytics: anonymised analysis of how the website is used.",
+    "marketingLabel": "Marketing",
+    "marketingDescription": "Meta Pixel and Meta Conversions API: measures whether visitors from our Facebook/Instagram ads book an appointment. Data is transferred to Meta Platforms Ireland.",
+    "acceptAll": "Accept all",
+    "necessaryOnly": "Necessary only",
+    "settings": "Settings",
+    "saveSelection": "Save selection"
+  },
+  "Booking": {
+    "title": "Book an appointment",
+    "description": "Book your free introductory consultation with TUNES everyday assistance & care in Gelsenkirchen online.",
+    "eyebrow": "Free first consultation",
+    "heading": "Your introductory consultation",
+    "intro": "Pick a time that suits you. The consultation is free and non-binding – by video, by phone or at your home.",
+    "loading": "Loading the booking calendar …",
+    "fallback": "Calendar not showing? Book directly on Cal.com",
+    "success": "Thank you! Your appointment is booked. You will receive a confirmation email shortly.",
+    "privacyNote": "Bookings are handled by Cal.com. Details are in our",
+    "privacyLink": "privacy policy",
+    "phoneHint": "Prefer to call?"
   }
 }

@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
 import { buildMailto } from "@/lib/mailto";
 import { Logo } from "@/components/brand/logo";
+import { ConsentSettingsButton } from "@/components/consent/consent-settings-button";
 import { EmailAddress } from "./email-address";
 import { navSections, sectionHref } from "./nav-items";
 
@@ -99,6 +100,12 @@ export function SiteFooter() {
                   <Link href="/datenschutz" className={`${linkClass} text-sm text-muted-foreground`}>
                     {t("privacy")}
                   </Link>
+                </li>
+                <li>
+                  <ConsentSettingsButton
+                    label={t("cookieSettings")}
+                    className={`${linkClass} cursor-pointer text-sm text-muted-foreground`}
+                  />
                 </li>
               </ul>
             </nav>

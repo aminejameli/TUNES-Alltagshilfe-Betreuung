@@ -26,6 +26,10 @@ export const siteConfig = {
    * While `null`, the booking CTA falls back to the email CTA.
    */
   calcomUrl: "https://cal.com/tunes-alltagshilfe/ersten-gesprach-zum-kennenlernen",
+  /** Cal.com link embedded on /termin (username/event-slug). */
+  calLink: "tunes-alltagshilfe/ersten-gesprach-zum-kennenlernen",
+  /** Google Tag Manager container; loads only after analytics consent. */
+  gtmId: "GTM-MM3T3RHF",
   /**
    * Set to `true` only once Impressum and Datenschutz texts have been supplied
    * and approved. Production builds fail while this is `false`.

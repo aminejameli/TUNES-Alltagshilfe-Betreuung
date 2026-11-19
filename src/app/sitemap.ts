@@ -4,7 +4,7 @@ import { routing, type AppPathname } from "@/i18n/routing";
 import { absoluteUrl, localizedPath } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages: AppPathname[] = ["/"];
+  const pages: AppPathname[] = ["/", "/termin"];
   if (siteConfig.legalContentApproved) pages.push("/impressum", "/datenschutz");
 
   return pages.flatMap((href) => {

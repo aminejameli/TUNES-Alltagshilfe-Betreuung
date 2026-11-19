@@ -1,8 +1,7 @@
 import { CalendarCheck } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { siteConfig } from "@/config/site";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
-import { buildMailto } from "@/lib/mailto";
 import { cn } from "@/lib/utils";
 
 type BookingCtaProps = Omit<React.ComponentProps<typeof Button>, "asChild" | "children"> & {
@@ -12,29 +11,19 @@ type BookingCtaProps = Omit<React.ComponentProps<typeof Button>, "asChild" | "ch
 };
 
 /**
- * Primary CTA for booking a consultation.
- * When `siteConfig.calcomUrl` is set, opens the Cal.com booking page.
- * Otherwise falls back to a mailto: link.
+ * Primary CTA for booking a consultation. Leads to the on-site booking page (/termin),
+ * where the Cal.com booker is embedded so conversions can be measured on our own domain.
  */
 export function BookingCta({ label, iconOnly = false, size, className, ...props }: BookingCtaProps) {
   const t = useTranslations("Common");
   const text = label ?? t("bookingCta");
-  const href = siteConfig.calcomUrl ?? buildMailto(t("emailSubject"));
-  const hint = siteConfig.calcomUrl ? t("bookingOpensHint") : t("emailOpensHint");
-
-  const isExternal = Boolean(siteConfig.calcomUrl);
 
   return (
     <Button asChild size={iconOnly ? "icon" : size} className={cn(className)} {...props}>
-      <a
-        href={href}
-        target={isExternal ? "_blank" : undefined}
-        rel={isExternal ? "noopener noreferrer" : undefined}
-        aria-label={`${text} (${hint})`}
-      >
+      <Link href="/termin" aria-label={iconOnly ? text : undefined}>
         <CalendarCheck aria-hidden className={cn(iconOnly && "size-6")} />
         {iconOnly ? null : text}
-      </a>
+      </Link>
     </Button>
   );
 }

@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import localFont from "next/font/local";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -11,6 +10,8 @@ import { ThemeSync } from "@/components/theme/theme-sync";
 import { InlineScript } from "@/components/theme/inline-script";
 import { SiteFooter } from "@/components/site/site-footer";
 import { SiteHeader } from "@/components/site/site-header";
+import { ConsentBanner } from "@/components/consent/consent-banner";
+import { TrackingScripts } from "@/components/consent/tracking-scripts";
 import "../globals.css";
 
 const inter = localFont({
@@ -55,17 +56,6 @@ export default async function LocaleLayout({ children }: LayoutProps<"/[locale]"
     <html lang={locale} className={inter.variable} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
         <InlineScript html={themeInitScript} />
-        <Script
-          src="https://www.googletagmanager.com/gtm.js?id=GTM-MM3T3RHF"
-          strategy="afterInteractive"
-        />
-        <Script id="gtm-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          `}
-        </Script>
       </head>
       <body className="flex min-h-dvh flex-col">
         <NextIntlClientProvider>
@@ -81,6 +71,8 @@ export default async function LocaleLayout({ children }: LayoutProps<"/[locale]"
           </main>
           <SiteFooter />
           <ThemeSync />
+          <ConsentBanner />
+          <TrackingScripts />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -10,6 +10,7 @@ export const routing = defineRouting({
   alternateLinks: false,
   pathnames: {
     "/": "/",
+    "/termin": { de: "/termin", en: "/appointment" },
     "/impressum": { de: "/impressum", en: "/legal-notice" },
     "/datenschutz": { de: "/datenschutz", en: "/privacy" },
   },

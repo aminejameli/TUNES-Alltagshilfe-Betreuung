@@ -152,7 +152,8 @@
     "contactHeading": "Kontakt",
     "navHeading": "Seiten",
     "impressum": "Impressum",
-    "privacy": "Datenschutz"
+    "privacy": "Datenschutz",
+    "cookieSettings": "Cookie-Einstellungen"
   },
   "Legal": {
     "pendingBadge": "Inhalt ausstehend",
@@ -188,5 +189,34 @@
     "body": "Die aufgerufene Seite gibt es leider nicht. Vielleicht hilft Ihnen einer dieser Wege weiter.",
     "home": "Zur Startseite",
     "services": "Unsere Leistungen"
+  },
+  "Consent": {
+    "title": "Datenschutz-Einstellungen",
+    "body": "Wir verwenden technisch notwendige Speicherungen, damit die Website funktioniert. Mit Ihrer Einwilligung nutzen wir zusätzlich Google Tag Manager/Analytics zur Reichweitenmessung und das Meta-Pixel (Facebook/Instagram), um die Wirkung unserer Anzeigen zu messen. Sie können Ihre Auswahl jederzeit über „Cookie-Einstellungen“ im Seitenfuß ändern oder widerrufen.",
+    "privacyLink": "Mehr in der Datenschutzerklärung",
+    "detailsLegend": "Kategorien auswählen",
+    "necessaryLabel": "Notwendig",
+    "necessaryDescription": "Speichert Ihre Auswahl und Ihr Farbschema. Immer aktiv.",
+    "analyticsLabel": "Statistik",
+    "analyticsDescription": "Google Tag Manager und Google Analytics: anonymisierte Auswertung, wie die Website genutzt wird.",
+    "marketingLabel": "Marketing",
+    "marketingDescription": "Meta-Pixel und Meta Conversions API: misst, ob Besucher über unsere Facebook-/Instagram-Anzeigen einen Termin buchen. Daten werden an Meta Platforms Ireland übermittelt.",
+    "acceptAll": "Alle akzeptieren",
+    "necessaryOnly": "Nur notwendige",
+    "settings": "Einstellungen",
+    "saveSelection": "Auswahl speichern"
+  },
+  "Booking": {
+    "title": "Termin vereinbaren",
+    "description": "Buchen Sie online Ihr kostenloses Erstgespräch zum Kennenlernen mit TUNES Alltagshilfe & Betreuung in Gelsenkirchen.",
+    "eyebrow": "Kostenloses Erstgespräch",
+    "heading": "Ihr Erstgespräch zum Kennenlernen",
+    "intro": "Wählen Sie einen passenden Termin. Das Gespräch ist kostenlos und unverbindlich – per Video, telefonisch oder bei Ihnen zu Hause.",
+    "loading": "Terminkalender wird geladen …",
+    "fallback": "Kalender wird nicht angezeigt? Termin direkt bei Cal.com buchen",
+    "success": "Vielen Dank! Ihr Termin ist gebucht. Sie erhalten in Kürze eine Bestätigung per E-Mail.",
+    "privacyNote": "Die Buchung wird über Cal.com abgewickelt. Details finden Sie in unserer",
+    "privacyLink": "Datenschutzerklärung",
+    "phoneHint": "Lieber telefonisch?"
   }
 }
